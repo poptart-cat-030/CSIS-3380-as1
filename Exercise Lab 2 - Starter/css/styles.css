@@ -58,7 +58,35 @@ ol, ul {
         display: block;
       }
 
-.pagination{
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+}
+
+.pagination-number, 
+.pagination-button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  height: 2.25rem;
+  width: 2.25rem;
+  margin: 0.25em;
+  border-radius: 0.2rem;
+}
+.pagination-number:hover, 
+.paginatioon-button:not(.disabled):hover {
+  background-color: rgba(0, 133, 182, 0.25);
+}
+
+.pagination-number active {
+  color: #fff;
+  background: rgb(0, 133, 182);
+}
+
+/* .pagination{
   margin: 40px 0 0 0;
   text-align: center;
 }
@@ -79,4 +107,4 @@ ol, ul {
     .pagination li a:hover{
       background-color: #4ba6c3;
       color: #fff;
-    } */
+    }  */

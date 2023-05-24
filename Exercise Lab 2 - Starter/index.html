@@ -11,9 +11,9 @@
       <div class="page-header cf">
         <h2>Contacts</h2> 
         <h3 id="total-users">Total: </h3>
-
       </div>
-      <ul class="contact-list">
+
+      <ul id="paginated-list" class="contact-list" data-current-page="1" aria-live="polite">
         <!-- map through each li using list of users -->
         <!-- <li class="contact-item cf">
             <div class="contact-details">
@@ -24,9 +24,22 @@
             <div class="joined-details">
                    <span class="date">Joined 07/15/15</span>
            </div>
-        </li>
-      </ul> -->
+        </li> -->
+      </ul>
       <!-- Add pagination links in this section -->
+      <nav class="pagination-container">
+        <button class="pagination-button" id="prev-page-button" title="Previous page" aria-label="Previous Page">
+          &lt;
+        </button>
+        <div id="pagination-numbers">
+
+        </div>
+        <button class="pagination-button" id="next-page-button" title="Next page" aria-label="Next Page">
+          &gt;
+        </button>
+      </nav>
+
+      
 
     </div>
     <script type="module" src="js/script.js"></script>
